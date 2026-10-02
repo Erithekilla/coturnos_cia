@@ -1,0 +1,26 @@
+# Ignores do Git e Docker
+.git
+.gitignore
+.dockerignore
+
+# Dependências locais (serão instaladas dentro do container)
+/vendor
+/node_modules
+
+# Arquivos de log e cache do Laravel
+/storage/logs/*
+!/storage/logs/.gitkeep
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+
+# Arquivos de configuração de IDEs e do SO
+.idea
+.vscode
+.ds_store
+Thumbs.db
+
+# Arquivos temporários e testes
+.phpunit.result.cache
+*.rar
+*.zip
