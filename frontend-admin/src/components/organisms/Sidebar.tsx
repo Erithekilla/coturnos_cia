@@ -13,7 +13,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ activePage }) => {
   const location = useLocation();
 
   const getHomeUrl = (): string => {
-    return window.location.port === '5174' ? 'http://localhost:5173/' : '/';
+    return window.location.port === '5174' ? 'http://localhost:5174/' : '/';
   };
 
   const handleLogout = (): void => {

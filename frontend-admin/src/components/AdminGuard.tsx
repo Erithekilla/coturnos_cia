@@ -56,8 +56,9 @@ export function AdminGuard({ children }: AdminGuardProps): React.JSX.Element {
     }
   }, []);
 
-  const getStoreUrl = () => (window.location.port === '5174' ? 'http://localhost:5173/' : '/');
-  const getLoginUrl = () => (window.location.port === '5174' ? 'http://localhost:5173/login' : '/login');
+  const getStoreUrl = () => (window.location.port === '5174' ? 'http://localhost:5174/admin/' : '/admin/');
+  const getLoginUrl = () => (window.location.port === '5174' ? 'http://localhost:5174/admin/login' : '/admin/login');
+
 
   const handleLogout = () => {
     localStorage.removeItem('coturnos_auth_token');
